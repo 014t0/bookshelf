@@ -8,8 +8,3 @@
 go mod init
 go run main.go
 ```
-
-### heroku
-```
-git push heroku <repository>
-```
