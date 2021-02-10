@@ -16,7 +16,7 @@ func main() {
 	})
 
 	r.GET("/booklist", func(ctx *gin.Context) {
-		ctx.HTML(200, "https://bookshelf-web.herokuapp.com/booklist", gin.H{})
+		ctx.HTML(200, "booklist.html", gin.H{})
 	})
 
 	port := os.Getenv("PORT")
