@@ -1,0 +1,19 @@
+.colored {
+    /* 開発中呑み背景色 */
+    background-color: skyblue;
+}
+
+.gray {
+    background-color: #f2f2f2;
+}
+
+.blue {
+     /* 開発中のみ背景色 */
+    background-color: burlywood;
+    /* padding: 0; */
+}
+
+.main-nav {
+    width: 100%;
+    height: 62px;
+}
