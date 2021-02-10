@@ -15,6 +15,10 @@ func main() {
 		ctx.HTML(200, "index.html", gin.H{})
 	})
 
+	r.GET("/booklist", func(ctx *gin.Context) {
+		ctx.HTML(200, "https://bookshelf-web.herokuapp.com/booklist", gin.H{})
+	})
+
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
