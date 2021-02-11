@@ -6,6 +6,7 @@ func Handler() *gin.Engine {
 	r := gin.Default()
 
 	r.LoadHTMLGlob("web/*.html")
+	r.Static("/web", "./web")
 
 	r.GET("/", func(ctx *gin.Context) {
 		ctx.HTML(200, "index.html", gin.H{})
